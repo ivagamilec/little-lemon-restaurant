@@ -1,17 +1,19 @@
-header {
+/* .header {
 
 }
 
-navbar {
+.navbar {
 
 
-}
+} */
 
 .App {
   text-align: center;
 }
 
-.App-logo {
+
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -44,4 +46,4 @@ navbar {
   to {
     transform: rotate(360deg);
   }
-}
+} */

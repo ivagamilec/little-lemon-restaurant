@@ -1,5 +1,5 @@
 import React from "react";
-import restauranfood from "public/restauranfood.jpg"
+
 
 function Header () {
     return (
@@ -9,7 +9,7 @@ function Header () {
             <p>
             We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
             </p>
-            <img src="restauranfood" alt="man serving food"></img>
+            <img src="/restauranfood.jpg" alt="man serving food"></img>
         </header>
     )
 };

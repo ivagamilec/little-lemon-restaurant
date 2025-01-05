@@ -1,18 +1,18 @@
 import React from "react";
-import logo.jpg from "public/logo.jpg";
+
 
 const Nav = () => {
     return (
         <nav className="navbar">
             <a href="/">
-            <img src={logo} alt="logo" />
+            <img src="/logo.jpg" alt="logo" />
             </a>
 
-            <div>
+            {/* <div>
                 <div className="bar"></div>
                 <div className="bar"></div>
                 <div className="bar"></div>
-            </div>
+            </div> */}
 
             <ul>
                 <li>
