@@ -2,7 +2,7 @@ import React from "react";
 
 const Nav = () => {
     return (
-        <nav>
+        <nav className="navbar">
             <a href="/">
             <img src={localStorage.jpg} alt="logo" />
             </a>
