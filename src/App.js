@@ -1,21 +1,15 @@
 
 import './App.css';
+import Footer from './Footer';
+import Header from './Header';
 
 function App() {
   return (
     <>
-      <header>
-
-      </header>
-      <nav>
-
-      </nav>
-      <main>
-
-      </main>
-      <footer>
-        
-      </footer>
+      <Header/>
+      <Nav/>
+      <Main/>
+      <Footer/>
     </>
   );
 }
