@@ -1,51 +1,622 @@
- /* .header {
-align-items: center;
-} */
+*{
+  padding: 0;
+  margin: 0;
+}
 
-/* .navbar {
-  padding: 10px 13%;
+html {
+  scroll-behavior: smooth;
+}
+
+.button{
+  font-family: 'Karla';
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
-
-.App {
-  text-align: center;
-}
-
-
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #ffffff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 240px;
+  height: 58px;
+  background-color: #f4ce14;
+  color: #333333;
+  text-decoration: none;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 800;
+  box-shadow:5px 5px #33333332;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: #333333;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button:disabled{
+  background-color: #eb000000;
+  color: rgb(255, 2, 2);
+  opacity: 0.35;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1% 20%;
+}
+
+
+.item1 img{
+  width: 200px;
+}
+
+.navitems ul {
+  display:flex;
+  list-style: none;
+}
+
+.navitems ul li a{
+  font-family: 'Karla';
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 20px;
+}
+
+.navitems ul li a:hover{
+  font-family: 'Karla';
+  text-decoration: none;
+  color: #495E57;
+}
+
+.herodiv {
+  display: grid;
+  padding: 0% 20%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: #495E57;
+  height: 350px;
+}
+
+.herodiv .herodiv1{
+  display: inline-block;
+}
+
+.herodiv .herodiv1 h1{
+  font-family: "Markazi text";
+  font-size: 64px;
+  font-weight: 300;
+  color: #f4ce14;
+  height: 64px;
+  padding-top: 20px;
+}
+
+.herodiv .herodiv1 h2{
+  font-family: "Markazi text";
+  font-size: 40px;
+  font-weight: 200;
+  height: 40px;
+  color: white;
+}
+
+
+.herodiv .herodiv1 p{
+  font-family: "Karla";
+  font-size: 18px;
+  color: white;
+  padding: 25px 0px 20px;
+}
+
+
+.herodiv .herodiv2{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.herodiv .herodiv2 img{
+  position: absolute;
+  border-radius: 16px;
+  margin-top: 35px;
+  width: 25%;
+  max-height: 400px;
+}
+
+.highlights{
+  display: grid;
+  place-items: center;
+  padding: 0% 20%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.high1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10% 20% 3%;
+}
+
+
+.high1 h1{
+  font-family: 'Markazi Text';
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.card{
+  margin-top: 5%;
+  width: 250px;
+  height: 428px;
+  background: #33333314;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.card img{
+  width: 250px;
+  height: 166px;
+  border-radius: 16px;
+}
+
+.highlights .card:nth-child(1) {
+  justify-self: start;
+}
+
+.highlights .card:nth-child(2) {
+  justify-self: center;
+}
+
+.highlights .card:nth-child(3) {
+  justify-self: end;
+}
+
+.card .card-name{
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 5%;
+  font-family: "Karla";
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.card .card-name h4{
+  color: #F37B12;
+}
+
+.card p{
+  padding: 5% 5%;
+}
+
+.card .order{
+  padding: 5% 5% 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .order img{
+  width: 50px;
+  height: auto;
+}
+
+.card .order a{
+  font-family: "Karla";
+  text-decoration: none;
+  color: #333333;
+  font-weight: 800;
+}
+
+.testimonialsdiv {
+  background: #33333314;
+  height: 430px;
+}
+
+.testimonials{
+  display: grid;
+  place-items: center;
+  padding: 0% 20%;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+}
+
+.testimonials-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  margin: 5% 20% 3%;
+}
+
+.testimonials-title h1{
+  font-family: 'Markazi Text';
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.cardtestimonial img{
+  width: 100px;
+  height: auto;
+  border-radius: 100px;
+}
+
+.cardtestimonial{
+  width: 206px;
+  height: auto;
+  background: #495E57;
+  border-radius: 16px;
+  padding: 8px;
+  box-shadow: 15px 15px #333333 ;
+}
+
+.cd-name{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.cd-name h2{
+  align-self: center;
+  color: white;
+}
+
+.testimonials .ratings{
+  display: flex;
+  margin-top: 15px;
+  color: white;
+}
+
+.testimonials .ratings img{
+  width: 20px;
+  height: 20px;
+  padding-bottom: 5px;
+}
+
+.testimonials h3{
+  font-size: 20px;
+  font-family: "Karla";
+  font-weight: 500;
+  align-self: center;
+  margin-right: 10px;
+  color: white;
+}
+
+.testimonials p{
+  font-size: 18px;
+  font-family: "Karla";
+  font-weight: 200;
+  margin-top: 15px;
+  color: white;
+}
+
+.cardtestimonial:nth-child(1) {
+  justify-self: start;
+}
+
+.testimonials .cardtestimonial:nth-child(2) {
+  justify-self: center;
+}
+
+.testimonials .cardtestimonial:nth-child(3) {
+  justify-self: end;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  margin: 5% 20%;
+  height: 500px;
+}
+
+.about-images{
+  position: relative;
+  display: flex;
+}
+
+.about-images img{
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-images #about-one {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.about-images #about-two {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 60;
+
+}
+
+.about-left{
+  align-self: center;
+}
+
+.about-left h1{
+  height: 64px;
+  font-family: "Markazi text";
+  font-size: 64px;
+  font-weight: 300;
+}
+
+.about-left h2 {
+  height: 40px;
+  font-family: "Markazi text";
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.about-left p {
+  font-family: "Karla";
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 15px;
+  width: 300px;
+}
+
+.footer {
+  display: grid;
+  padding: 0% 20%;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  background: #33333323;
+  height: 250px;
+}
+
+.footer img{
+  justify-self: center;
+  align-self: center;
+  width: 150px;
+  height: auto;
+}
+
+.footer ul{
+  justify-self: center;
+  align-self: center;
+  list-style: none;
+}
+
+.footer ul li a{
+  text-decoration: none;
+  font-family: "Karla";
+  font-size: 18px;
+  font-weight: 500;
+  color: #495E57;
+}
+
+.footer ul li a:hover{
+  text-decoration: none;
+  font-family: "Karla";
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.footer:nth-child(1) {
+  justify-self: start;
+}
+
+.footer:nth-child(2) {
+  justify-self: center;
+}
+
+.footer:nth-child(3) {
+  justify-self: center;
+}
+
+.footer:nth-child(4) {
+  justify-self: end;
+}
+
+
+
+/*MediaQueries*/
+
+@media (min-width:1300px) {
+  .header .hamburg{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 1300px) {
+  .header, .testimonials{
+    margin: 0% 10%;
   }
-} */
+  .highlights, .footer, .herodiv, .testimonials{
+    padding: 0% 10%;
+  }
+  .high1 {
+    margin: 10% 10% 5%;
+  }
+  .header .hamburg{
+    display: none;
+  }
+}
+
+
+@media (max-width: 1120px) {
+  .testimonials {
+    padding: 0%;
+  }
+  .about #about-one {
+    top: 25%;
+    width: 250px;
+  }
+
+  .about #about-two {
+    bottom: 25%;
+    width: 250px;
+  }
+}
+
+@media (max-width: 970px) {
+    .testimonials {
+      padding: 0%;
+    }
+    .header {
+      margin: 2% 3%;
+    }
+    .high1,  .testimonials-title  {
+      margin: 2% 0%;
+    }
+    .high1{
+      margin: 8% 5%;
+    }
+    .testimonials, .about{
+      margin: 2% 5%;
+    }
+    .herodiv, .highlights, .footer{
+      padding: 0% 5%;
+    }
+    .herodiv .div2{
+      justify-content: center;
+    }
+    .herodiv .herodiv1 h1, h2, p, a{
+      margin-left: 10%;
+    }
+
+}
+
+@media (max-width: 840px) {
+  .header {
+    justify-content: space-between;
+    margin: 0% 5%;
+  }
+  .header .hamburg{
+    display: flex;
+  }
+  .header .navitems{
+    display: none;
+  }
+  .high1 h1{
+    font-size: 54px;
+  }
+  .herodiv .herodiv2 img{
+    margin-top: 5%;
+    width: 35%;
+    height: 340px;
+  }
+
+}
+
+@media (max-width: 750px) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .header img{
+    justify-self: flex-start;
+  }
+  .header .hamburg{
+    justify-self: flex-end;
+  }
+  .herodiv .herodiv1 h1, h2, p, a{
+    margin-left: 10%;
+  }
+  .high1{
+    margin: 8% 5% 5%;
+  }
+
+  .highlights .card:nth-child(1) {
+    justify-self: center;
+  }
+
+  .highlights .card:nth-child(2) {
+    justify-self: center;
+  }
+  
+  .highlights .card:nth-child(3) {
+    display: none;
+  }
+
+  .testimonials .cardtestimonial:nth-child(3) {
+    display: none;
+  }
+
+  .testimonialsdiv{
+    margin: 8% 0% 0%;
+  }
+  .testimonials-title{
+    margin: 5%;
+  }
+  .high1 h1{
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 650px) {
+  .herodiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .herodiv .herodiv2{
+    display: none;
+  }
+  .herodiv .herodiv1{
+    max-width: 350px;
+  }
+  .herodiv .herodiv1 h1{
+    padding-top: 0px;
+  }
+
+  .about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-images #about-one{
+    justify-content: flex-start;
+    opacity: 20%;
+  }
+  .about-images #about-two{
+    display: none;
+  }
+  .high1 h1{
+    font-size: 35px;
+  }
+  .cardtestimonial:nth-child(1) {
+    justify-self: center;
+  }
+  
+  .testimonials .cardtestimonial:nth-child(2) {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .high1{
+    justify-content: center;
+  }
+
+  .high1 h1{
+    justify-content: center;
+    font-size: 45px;
+  }
+  .high1 a{
+    display: none;
+  }
+  .testimonialsdiv{
+    height: 590px;
+    margin-bottom: 0%;
+  }
+
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .last-footer-child{
+    display: none;
+  }
+}

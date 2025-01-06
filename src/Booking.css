@@ -1,0 +1,162 @@
+.bookingpage{
+    display: grid;
+}
+
+.BookingHero{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    padding: 5% 20%;
+    gap: 16px;
+    height: auto;
+    background-color: #495E57;
+}
+
+.BookingHero img{
+    align-self: center;
+    width: 500px;
+    height: auto;
+    border-radius: 16px;
+}
+.BookingHero .HeroText{
+    align-self: center;
+}
+
+.BookingHero .HeroText h1{
+    font-family: "Markazi text";
+    font-size: 64px;
+    font-weight: 300;
+    color: #f4ce14;
+    height: 64px;
+    padding-bottom: 20px;
+}
+
+.BookingHero .HeroText h2{
+    font-family: "Markazi text";
+    font-size: 40px;
+    font-weight: 200;
+    height: 40px;
+    color: white;
+}
+
+.BookingHero .HeroText p{
+    font-family: "Karla";
+    font-size: 18px;
+    color: white;
+    padding: 25px 0px 10px;
+}
+
+label{
+    font-family: "Karla";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+input{
+    font-family: "Karla";
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    color: white;
+    background-color: #495E57;
+}
+
+select{
+    font-family: "Karla";
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    color: white;
+    background-color: #495E57;
+}
+
+.footer:nth-child(3){
+    justify-self: normal;
+}
+
+form .input-errors, .input-errors{
+    border-color: rgba(255, 0, 0, 0.705);
+}
+
+.errors{
+    font-family: "Karla";
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 0, 0, 0.705);
+}
+
+button:disabled{
+    background-color: #eb000000;
+    color: rgb(255, 2, 2);
+    opacity: 0.35;
+}
+
+@media (max-width: 1258px) {
+    .BookingHero img{
+        width: 100%;
+        justify-self: center;
+    }
+    .BookingHero .HeroText{
+        max-width: 400px;
+        justify-self: center;
+    }
+    .BookingHero .HeroText h1{
+        justify-self: flex-start;
+        font-size: 64px;
+        padding-bottom: 15px;
+        height: 64px;
+    }
+    .BookingHero .HeroText h2{
+        justify-self: flex-start;
+        font-size: 45px;
+        padding-top: 20px;
+        height: 45px;
+    }
+    .BookingHero .HeroText p{
+        padding: 10px 0px;
+    }
+    .herodiv .herodiv1 h1, h2, p, a {
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 550px) {
+    .bookingpage{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .BookingHero{
+        padding: 0 0;
+        max-width: 100%;
+    }
+    .BookingHero img{
+        width: 100%;
+        justify-self: center;
+    }
+    .BookingHero .HeroText{
+        max-width: 300px;
+        justify-self: center;
+    }
+    .BookingHero .HeroText h1{
+        justify-self: flex-start;
+        font-size: 45px;
+        padding-bottom: 0;
+        height: 64px;
+    }
+    .BookingHero .HeroText h2{
+        justify-self: flex-start;
+        font-size: 35px;
+        padding-top: 20px;
+        height: 35px;
+    }
+
+    .BookingHero .HeroText p{
+        padding: 10px 0px;
+    }
+    .herodiv .herodiv1 h1, h2, p, a {
+        margin-left: 0%;
+    }
+}

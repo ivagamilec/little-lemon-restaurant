@@ -1,41 +1,20 @@
-import React from "react";
+import { Link} from "react-router-dom";
 
 
 const Nav = () => {
-    return (
-        <nav className="navbar">
-            <a href="/">
-            <img src="/logo.jpg" alt="logo" />
-            </a>
-
-            {/* <div>
-                <div className="bar"></div>
-                <div className="bar"></div>
-                <div className="bar"></div>
-            </div> */}
-
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/">About</a>
-                </li>
-                <li>
-                    <a href="/">Menu</a>
-                </li>
-                <li>
-                    <a href="/">Reservations</a>
-                </li>
-                <li>
-                    <a href="/">Order online</a>
-                </li>
-                <li>
-                    <a href="/">Login</a>
-                </li>
-            </ul>
-        </nav>
-    );
+    return(
+        <div className="navitems">
+          <ul>
+            <li><Link to="/#header" aria-label="Home">Home</Link></li>
+            <li><Link to="/#about"aria-label="About us">About</Link></li>
+            <li><Link to="/#highlights" aria-label="Menu">Menu</Link></li>
+            <li><Link to="/bookingpage" aria-label="Reservations">Reservation</Link></li>
+            <li><Link to="#">Order Online</Link></li>
+            <li><Link to="#">Login</Link></li>
+          </ul>
+        </div>
+      );
 };
+
 
 export default Nav;
