@@ -9,7 +9,7 @@ function Header () {
             <p>
             We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
             </p>
-            <img src="/restauranfood.jpg" alt="man serving food"></img>
+            <img src="./Hero image.png" alt="man serving food"></img>
         </header>
     )
 };
